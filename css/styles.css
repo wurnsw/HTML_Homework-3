@@ -379,3 +379,17 @@ a {
 }
 
 /* #endregion*/
+
+/* #region PROJECTS */
+
+.projects__filters {
+  margin-bottom: 34px;
+}
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* #endregion*/
