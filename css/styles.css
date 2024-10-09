@@ -58,6 +58,9 @@ a {
 /* #endregion */
 
 /* #region HEADER */
+.header--line {
+  border-bottom: 1px solid #ececec;
+}
 
 .header__content {
   display: flex;
