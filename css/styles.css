@@ -58,7 +58,8 @@ a {
 /* #endregion */
 
 /* #region HEADER */
-.header--line {
+
+.header {
   border-bottom: 1px solid #ececec;
 }
 
