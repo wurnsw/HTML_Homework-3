@@ -18,7 +18,7 @@ ol {
 }
 /* #endregion */
 
-/* #region VARIABLE*/
+/* #region VARIABLES */
 :root {
   --color-grey: #757575;
   --color-blue: #2196f3;
@@ -35,7 +35,7 @@ ol {
 
 html {
   font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont;
-  color: var(--color-black)
+  color: var(--color-black);
 }
 
 a {
@@ -49,8 +49,6 @@ a {
   box-sizing: border-box;
 }
 /* #endregion */
-
-
 
 /* #region CONTAINER */
 
@@ -224,13 +222,7 @@ a {
 }
 
 .banner__button {
-  height: 50px;
   width: 216px;
-
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
 }
 /* #endregion */
 
@@ -244,13 +236,14 @@ a {
 
   height: 50px;
 
+  font-size: 16px;
   font-weight: 500;
   line-height: 30px;
 
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   color: var(--color-black);
 
-  border: 1px solid #F5F4FA;
+  border: 1px solid #f5f4fa;
   border-radius: 4px;
 
   transition: all 200ms;
@@ -269,7 +262,7 @@ a {
   background-color: var(--color-blue);
   color: var(--color-white);
 
-  border: 1px solid var(--color-blue);
+  border: none;
 }
 
 .button--bold {
