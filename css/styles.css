@@ -93,6 +93,8 @@ a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+
+  transition: 200ms;
 }
 
 .nav__item:hover {
@@ -123,14 +125,16 @@ a {
   display: flex;
   align-items: center;
 
+  line-height: 21px;
+
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
   letter-spacing: 0.02em;
 
-  line-height: 21px;
-
   color: var(--color-grey);
+
+  transition: 200ms;
 }
 
 .contacts__link:hover {
@@ -243,7 +247,7 @@ a {
   background-color: #f5f4fa;
   color: var(--color-black);
 
-  border: 1px solid #f5f4fa;
+  border: none;
   border-radius: 4px;
 
   transition: all 200ms;
@@ -252,10 +256,10 @@ a {
 }
 
 .button--small {
-  padding: 0 25px;
+  padding: 0 22px;
   height: 38px;
 
-  line-height: 26;
+  line-height: 26px;
 }
 
 .button--blue {
@@ -383,11 +387,10 @@ a {
   gap: 8px;
 }
 
-.filters__button {
-}
-
 .filters__button:hover,
 .filters__button--active {
+  padding: 0 25px;
+
   color: var(--color-white);
   background-color: var(--color-blue);
 
