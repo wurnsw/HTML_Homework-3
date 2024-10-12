@@ -18,10 +18,24 @@ ol {
 }
 /* #endregion */
 
+/* #region VARIABLE*/
+:root {
+  --color-grey: #757575;
+  --color-blue: #2196f3;
+  --color-white: #ffffff;
+  --color-black: #212121;
+  --color-link-footer: #ffffff99;
+  --background-color: #2f303a;
+  --color-filters-button: #f5f4fa;
+  --color-projects-border: #eeeeee;
+}
+/* #endregion */
+
 /* #region NORMALIZE*/
 
 html {
   font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont;
+  color: var(--color-black)
 }
 
 a {
@@ -36,18 +50,7 @@ a {
 }
 /* #endregion */
 
-/* #region VARIABLE*/
 
-:root {
-  --color-grey: #757575;
-  --color-blue: #2196f3;
-  --color-white: #ffffff;
-  --color-link-footer: #ffffff99;
-  --background-color: #2f303a;
-  --color-filters-button: #f5f4fa;
-  --color-projects-border: #eeeeee;
-}
-/* #endregion */
 
 /* #region CONTAINER */
 
@@ -234,11 +237,45 @@ a {
 /* #region BUTTON */
 
 .button {
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  border: 1px solid var(--color-blue);
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+
+  font-weight: 500;
+  line-height: 30px;
+
+  background-color: #F5F4FA;
+  color: var(--color-black);
+
+  border: 1px solid #F5F4FA;
   border-radius: 4px;
+
+  transition: all 200ms;
+
+  cursor: pointer;
 }
+
+.button--small {
+  padding: 0 25px;
+  height: 38px;
+
+  line-height: 26;
+}
+
+.button--blue {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+
+  border: 1px solid var(--color-blue);
+}
+
+.button--bold {
+  font-weight: 700;
+}
+
 /* #endregion */
 
 /* #region FEATURES */
@@ -351,25 +388,9 @@ a {
   display: flex;
   justify-content: center;
   gap: 8px;
-
-  height: 54px;
 }
 
 .filters__button {
-  padding: 6px 22px;
-
-  line-height: 26px;
-
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-
-  background-color: var(--color-filters-button);
-
-  border: none;
-  border-radius: 4px;
-
-  transition: 200ms;
 }
 
 .filters__button:hover,
@@ -377,8 +398,6 @@ a {
   color: var(--color-white);
   background-color: var(--color-blue);
 
-  box-shadow: 0px 2px 2px 0px #0000001f;
-  box-shadow: 0px 1px 2px 0px #00000014;
   box-shadow: 0px 3px 1px 0px #0000001a;
 }
 
@@ -387,7 +406,7 @@ a {
 /* #region PROJECTS */
 
 .projects__filters {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .projects__list {
@@ -417,6 +436,8 @@ a {
 }
 
 .project__name {
+  margin-bottom: 4px;
+
   line-height: 36px;
 
   font-size: 18px;
